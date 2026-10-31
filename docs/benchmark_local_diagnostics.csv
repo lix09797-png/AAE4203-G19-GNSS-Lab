@@ -1,0 +1,4 @@
+version,input_epochs,solved_epochs,local_output_coverage_percent,mean_postfit_pseudorange_rms_m,interpretation
+uniform,1534,1437,93.67666232073012,3.4337904528355403,Measurement-fit and output-coverage diagnostics; not position RMSE
+elevation,1534,1437,93.67666232073012,4.038349119513058,Measurement-fit and output-coverage diagnostics; not position RMSE
+huber,1534,1419,92.503259452412,4.300212533205989,Measurement-fit and output-coverage diagnostics; not position RMSE

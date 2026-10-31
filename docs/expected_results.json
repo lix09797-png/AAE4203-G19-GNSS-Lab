@@ -1,0 +1,303 @@
+{
+  "historical_example": {
+    "reference": "receiver standalone solution, NOT ground truth",
+    "matched_epochs": 186,
+    "rmse_2d_m": 37.9107584162264,
+    "rmse_3d_m": 51.042844306926185,
+    "p95_2d_m": 45.208034324935625
+  },
+  "own_comparisons": [
+    {
+      "comparison": "SPP_minus_receiver",
+      "matched_epochs": 712,
+      "mean_enu_m": [
+        7.087565483394428,
+        -2.422113108933741,
+        13.93935155261214
+      ],
+      "sample_std_enu_m": [
+        24.428416684923082,
+        15.391767254532285,
+        44.44904977074234
+      ],
+      "rms_difference_2d_m": 29.809115970231815,
+      "rms_difference_3d_m": 55.27958083495806,
+      "p95_difference_2d_m": 63.29482930805757
+    },
+    {
+      "comparison": "SPP_minus_RTKLIB_GPS",
+      "matched_epochs": 712,
+      "mean_enu_m": [
+        0.18662571473859868,
+        -0.8984237565474958,
+        2.1384772243656816
+      ],
+      "sample_std_enu_m": [
+        1.6539953693381186,
+        2.6135509363797125,
+        9.535147697868986
+      ],
+      "rms_difference_2d_m": 3.2241134748788944,
+      "rms_difference_3d_m": 10.283935962219338,
+      "p95_difference_2d_m": 7.351793288228368
+    },
+    {
+      "comparison": "SPP_minus_RTKLIB_multi",
+      "matched_epochs": 712,
+      "mean_enu_m": [
+        3.1369484063568143,
+        0.07202818689897153,
+        2.493525429149805
+      ],
+      "sample_std_enu_m": [
+        17.650332441538822,
+        13.482609191285382,
+        40.25203715961894
+      ],
+      "rms_difference_2d_m": 22.415792672563622,
+      "rms_difference_3d_m": 46.11546732598496,
+      "p95_difference_2d_m": 43.79397612096662
+    },
+    {
+      "comparison": "RTKLIB_GPS_minus_receiver",
+      "matched_epochs": 712,
+      "mean_enu_m": [
+        6.900937057431794,
+        -1.5236889216211997,
+        11.800874745832168
+      ],
+      "sample_std_enu_m": [
+        23.989079505719186,
+        15.284468749319714,
+        44.151588400259634
+      ],
+      "rms_difference_2d_m": 29.289914937206508,
+      "rms_difference_3d_m": 54.25665536152265,
+      "p95_difference_2d_m": 62.18325151358764
+    },
+    {
+      "comparison": "uniform_SPP_minus_receiver",
+      "matched_epochs": 712,
+      "mean_enu_m": [
+        7.281397252115571,
+        -0.4761428633448241,
+        8.961936948986867
+      ],
+      "sample_std_enu_m": [
+        24.088547325674675,
+        16.044342394982326,
+        47.062454326291515
+      ],
+      "rms_difference_2d_m": 29.828643576591297,
+      "rms_difference_3d_m": 56.407695572222174,
+      "p95_difference_2d_m": 61.83995167952821
+    },
+    {
+      "comparison": "huber_SPP_minus_receiver",
+      "matched_epochs": 712,
+      "mean_enu_m": [
+        3.1289630421302204,
+        -1.9695750419184612,
+        8.539515710294829
+      ],
+      "sample_std_enu_m": [
+        22.45520062145365,
+        15.555001340889612,
+        42.46017176657586
+      ],
+      "rms_difference_2d_m": 27.54660980603399,
+      "rms_difference_3d_m": 51.303733893245855,
+      "p95_difference_2d_m": 77.22361047202097
+    }
+  ],
+  "static_statistics": [
+    {
+      "method": "uniform",
+      "epochs": 60,
+      "window_start_tow_s": 464960.005,
+      "duration_seconds": 60,
+      "mean_ecef_m": [
+        -2418192.3819039837,
+        5385768.615201321,
+        2405770.734636866
+      ],
+      "mean_llh": [
+        22.305679805945985,
+        114.17992333376527,
+        20.812288062646985
+      ],
+      "sample_std_enu_m": [
+        26.30396176047386,
+        20.33208477997336,
+        53.812702276143675
+      ],
+      "rms_horizontal_about_mean_m": 32.96771968456247,
+      "p95_horizontal_about_mean_m": 87.69524421100104,
+      "interpretation": "scatter about own mean; not absolute accuracy"
+    },
+    {
+      "method": "elevation",
+      "epochs": 60,
+      "window_start_tow_s": 464960.005,
+      "duration_seconds": 60,
+      "mean_ecef_m": [
+        -2418196.8339561587,
+        5385780.234931019,
+        2405771.4430972124
+      ],
+      "mean_llh": [
+        22.30564314190838,
+        114.17991655935124,
+        32.575367929413915
+      ],
+      "sample_std_enu_m": [
+        25.28278672653314,
+        16.72221159995933,
+        39.56960997829667
+      ],
+      "rms_horizontal_about_mean_m": 30.05890003025652,
+      "p95_horizontal_about_mean_m": 70.70000466785251,
+      "interpretation": "scatter about own mean; not absolute accuracy"
+    },
+    {
+      "method": "huber",
+      "epochs": 60,
+      "window_start_tow_s": 464960.005,
+      "duration_seconds": 60,
+      "mean_ecef_m": [
+        -2418191.276949927,
+        5385777.3102215845,
+        2405770.7177305208
+      ],
+      "mean_llh": [
+        22.305654028234173,
+        114.17987898665736,
+        27.725752317346632
+      ],
+      "sample_std_enu_m": [
+        21.51617169466113,
+        15.431172974297565,
+        33.30953448009131
+      ],
+      "rms_horizontal_about_mean_m": 26.25609068440212,
+      "p95_horizontal_about_mean_m": 68.8598398208843,
+      "interpretation": "scatter about own mean; not absolute accuracy"
+    },
+    {
+      "method": "receiver",
+      "epochs": 60,
+      "window_start_tow_s": 464960.005,
+      "duration_seconds": 60,
+      "mean_ecef_m": [
+        -2418198.1085900003,
+        5385782.066151666,
+        2405769.5311133335
+      ],
+      "mean_llh": [
+        22.305619652236146,
+        114.17992056486702,
+        33.878259715624154
+      ],
+      "sample_std_enu_m": [
+        0.32086685825775096,
+        0.18730393743168644,
+        0.4737645759410903
+      ],
+      "rms_horizontal_about_mean_m": 0.3684259318739465,
+      "p95_horizontal_about_mean_m": 0.5629021347673833,
+      "interpretation": "scatter about own mean; not absolute accuracy"
+    }
+  ],
+  "variants": [
+    {
+      "dataset": "example_uniform",
+      "method": "uniform",
+      "input_epochs": 186,
+      "solved_epochs": 113,
+      "coverage_percent": 60.75268817204301,
+      "accuracy_status": "receiver comparison only; no independent truth",
+      "mean_postfit_rms_m": 0.25360777034779175,
+      "downweighted_epochs": 0
+    },
+    {
+      "dataset": "example_elevation",
+      "method": "elevation",
+      "input_epochs": 186,
+      "solved_epochs": 113,
+      "coverage_percent": 60.75268817204301,
+      "accuracy_status": "receiver comparison only; no independent truth",
+      "mean_postfit_rms_m": 0.25754716529105454,
+      "downweighted_epochs": 0
+    },
+    {
+      "dataset": "example_huber",
+      "method": "huber",
+      "input_epochs": 186,
+      "solved_epochs": 113,
+      "coverage_percent": 60.75268817204301,
+      "accuracy_status": "receiver comparison only; no independent truth",
+      "mean_postfit_rms_m": 0.25754716510408554,
+      "downweighted_epochs": 0
+    },
+    {
+      "dataset": "own_uniform",
+      "method": "uniform",
+      "input_epochs": 768,
+      "solved_epochs": 712,
+      "coverage_percent": 92.70833333333333,
+      "accuracy_status": "receiver comparison only; no independent truth",
+      "mean_postfit_rms_m": 7.68117313573245,
+      "downweighted_epochs": 0
+    },
+    {
+      "dataset": "own_elevation",
+      "method": "elevation",
+      "input_epochs": 768,
+      "solved_epochs": 712,
+      "coverage_percent": 92.70833333333333,
+      "accuracy_status": "receiver comparison only; no independent truth",
+      "mean_postfit_rms_m": 8.54019399864294,
+      "downweighted_epochs": 0
+    },
+    {
+      "dataset": "own_huber",
+      "method": "huber",
+      "input_epochs": 768,
+      "solved_epochs": 712,
+      "coverage_percent": 92.70833333333333,
+      "accuracy_status": "receiver comparison only; no independent truth",
+      "mean_postfit_rms_m": 9.127545504277407,
+      "downweighted_epochs": 230
+    },
+    {
+      "dataset": "benchmark_uniform",
+      "method": "uniform",
+      "input_epochs": 1534,
+      "solved_epochs": 1437,
+      "coverage_percent": 93.67666232073012,
+      "accuracy_status": "benchmark position accuracy not evaluated locally",
+      "mean_postfit_rms_m": 3.433790452815527,
+      "downweighted_epochs": 0
+    },
+    {
+      "dataset": "benchmark_elevation",
+      "method": "elevation",
+      "input_epochs": 1534,
+      "solved_epochs": 1437,
+      "coverage_percent": 93.67666232073012,
+      "accuracy_status": "benchmark position accuracy not evaluated locally",
+      "mean_postfit_rms_m": 4.038349119496446,
+      "downweighted_epochs": 0
+    },
+    {
+      "dataset": "benchmark_huber",
+      "method": "huber",
+      "input_epochs": 1534,
+      "solved_epochs": 1419,
+      "coverage_percent": 92.503259452412,
+      "accuracy_status": "benchmark position accuracy not evaluated locally",
+      "mean_postfit_rms_m": 4.3002125332264045,
+      "downweighted_epochs": 236
+    }
+  ]
+}
