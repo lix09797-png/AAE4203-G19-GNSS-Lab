@@ -1,0 +1,20 @@
+{
+  "plot_function": "gt.Gpos.plot (unmodified course MatRTKLIB)",
+  "input_file": "outputs/own_elevation/solution_details.csv",
+  "solver": "GPS L1 SPP with elevation-dependent weights",
+  "gps_week": 2442,
+  "start_tow_s": 464960.005,
+  "end_tow_exclusive_s": 465020.005,
+  "epochs": 60,
+  "mean_ecef_m": [
+    -2.4181968339561587E+6,
+    5.3857802349310182E+6,
+    2.4057714430972128E+6
+  ],
+  "sample_std_enu_m": [
+    25.282786726703872,
+    16.722211599952889,
+    39.569609978245623
+  ],
+  "horizontal_rms_about_mean_m": 30.0589000303942
+}
